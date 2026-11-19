@@ -43,16 +43,16 @@
       "sha256": "b07a25c19de980a2093f6c844880a21f837a0d7a196b4d1137fb38cd02122460"
     },
     {
-      "path": "斗四星际MOD-v8-一键安装.script.json",
-      "sha256": "bae04cc539fdedfe02548c90e1a965fe23976682b29c2b6add3d1695ddc120ee"
+      "path": "斗四星际MOD-v9-一键安装.script.json",
+      "sha256": "c3386d6c96103ae869732fe815675d73bf67d2b5539d6f4f3d45b7d8dc780cc2"
     },
     {
       "path": "斗四星际MOD-一键安装.script.json",
-      "sha256": "bae04cc539fdedfe02548c90e1a965fe23976682b29c2b6add3d1695ddc120ee"
+      "sha256": "c3386d6c96103ae869732fe815675d73bf67d2b5539d6f4f3d45b7d8dc780cc2"
     },
     {
       "path": "斗四星际MOD-工坊作品包.json",
-      "sha256": "ca7a41575eecee3a2c4004404edc0d2f6139f0f6c0889e95c787faacccf63416"
+      "sha256": "b81d1ad6bd57a66901712021aa1e75652bd80c73886d9dc2217561d8255f8a4d"
     },
     {
       "path": "斗四星际MOD-工坊上传.json",
@@ -67,11 +67,11 @@
       "sha256": "79667c504fc038d27f3955d6c82153697ecd4a727feaeb07e55fc4f97d8d56ea"
     },
     {
-      "path": "星海导航-v8-预览.html",
+      "path": "星海导航-v9-预览.html",
       "sha256": "fbb210fb65f64b9423e843d7f7abaec9afef3d9c850bc00174a79baa2f133c45"
     }
   ],
   "runtimeAcceptance": "pending",
-  "frontendVersion": "8.0.0",
-  "workshopVersion": 8
+  "frontendVersion": "9.0.0",
+  "workshopVersion": 9
 }
