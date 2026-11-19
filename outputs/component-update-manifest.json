@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "deliveryMode": "component",
+  "artifacts": [
+    {
+      "artifactName": "dl4-space-backend",
+      "kind": "helper-script",
+      "relativePath": "dl4-space-backend.helper.json",
+      "id": "a8f9a915-a3d2-4a12-80ac-ce51ae468510",
+      "sha256": "691f0f259397e54dc715bde3d85782d4a81bd2ec85a1cf5f38e3f0cade6d51f3"
+    },
+    {
+      "artifactName": "dl4-space-hide",
+      "kind": "regex",
+      "relativePath": "dl4-space-hide.regex.json",
+      "id": "68b03b08-497b-4f43-8be8-f4f1233ab301",
+      "sha256": "93958cc9c69bab5b4caabb86f685e35d3f43b20a9020679d46f88fa9f7313b0c"
+    },
+    {
+      "artifactName": "douluo-zod-space-compat",
+      "kind": "helper-script",
+      "relativePath": "douluo-zod-space-compat.helper.json",
+      "id": "f711915c-3ee2-4cfa-a037-3e86f085ee2a",
+      "sha256": "b07a25c19de980a2093f6c844880a21f837a0d7a196b4d1137fb38cd02122460"
+    }
+  ]
+}

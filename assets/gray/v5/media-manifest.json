@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "cardId": "dl4-space-gray-v5",
+  "assets": [
+    {
+      "id": "portrait",
+      "kind": "image",
+      "source": {
+        "type": "local",
+        "path": "portrait.webp"
+      },
+      "bytes": 175586,
+      "sha256": "60dda6ecc1d6e86f7fb0f8558d7b924274b1e4c148c44fa34a3e2e48b606fbe2",
+      "preload": "on-demand",
+      "lifetime": "card",
+      "fallbackAssetId": null,
+      "width": 1024,
+      "height": 1536,
+      "provenance": "本轮图5，清理透明边缘",
+      "alpha": true
+    },
+    {
+      "id": "wave",
+      "kind": "image",
+      "source": {
+        "type": "local",
+        "path": "wave.webp"
+      },
+      "bytes": 78904,
+      "sha256": "332599341584c3a34aa5ed326ce6d88b20cda1fcc3049dc6f8dde828f67dd2be",
+      "preload": "on-demand",
+      "lifetime": "card",
+      "fallbackAssetId": null,
+      "width": 512,
+      "height": 768,
+      "provenance": "本轮图1，透明差分",
+      "alpha": true
+    },
+    {
+      "id": "serious",
+      "kind": "image",
+      "source": {
+        "type": "local",
+        "path": "serious.webp"
+      },
+      "bytes": 75252,
+      "sha256": "1729fc445e0aecfa51a6c5a900350656ff524ff3765172f21bbc97a3e4aafa2b",
+      "preload": "on-demand",
+      "lifetime": "card",
+      "fallbackAssetId": null,
+      "width": 512,
+      "height": 768,
+      "provenance": "本轮图2，透明差分",
+      "alpha": true
+    },
+    {
+      "id": "salute",
+      "kind": "image",
+      "source": {
+        "type": "local",
+        "path": "salute.webp"
+      },
+      "bytes": 77832,
+      "sha256": "b8944630f3d326f4e58d64b00438c8e68d7ac7de59842b05126c097a6bad5ead",
+      "preload": "on-demand",
+      "lifetime": "card",
+      "fallbackAssetId": null,
+      "width": 512,
+      "height": 768,
+      "provenance": "本轮图3，透明差分",
+      "alpha": true
+    },
+    {
+      "id": "reach",
+      "kind": "image",
+      "source": {
+        "type": "local",
+        "path": "reach.webp"
+      },
+      "bytes": 89098,
+      "sha256": "ab7f0e7837484176695f44018af2bc705ae885f2d0ec735c0c34f1a0cbcf7f4c",
+      "preload": "on-demand",
+      "lifetime": "card",
+      "fallbackAssetId": null,
+      "width": 512,
+      "height": 768,
+      "provenance": "本轮图4，透明差分",
+      "alpha": true
+    },
+    {
+      "id": "ship",
+      "kind": "image",
+      "source": {
+        "type": "local",
+        "path": "ship.webp"
+      },
+      "bytes": 344318,
+      "sha256": "83bf93482b8e461a2626dd9ee46bf0c269e6d03d59b4762f43106838523095a4",
+      "preload": "on-demand",
+      "lifetime": "card",
+      "fallbackAssetId": null,
+      "width": 2172,
+      "height": 724,
+      "provenance": "本轮图6，精修装甲与能量通道",
+      "alpha": true
+    },
+    {
+      "id": "wedding",
+      "kind": "image",
+      "source": {
+        "type": "local",
+        "path": "wedding.webp"
+      },
+      "bytes": 297634,
+      "sha256": "bff665b01f6138b4cab9fe983414279c238b643eaf12cefb9bd666cb689901c1",
+      "preload": "on-demand",
+      "lifetime": "card",
+      "fallbackAssetId": null,
+      "width": 1024,
+      "height": 1536,
+      "provenance": "本轮图7，透明婚纱差分",
+      "alpha": true
+    },
+    {
+      "id": "smile",
+      "kind": "image",
+      "source": {
+        "type": "local",
+        "path": "expression-smile.png"
+      },
+      "bytes": 327911,
+      "sha256": "e14812bdf91df9c3836c99f53e6e734c7a720cd3aafa48c86c82e33cca3cb858",
+      "preload": "on-demand",
+      "lifetime": "card",
+      "fallbackAssetId": null,
+      "width": 599,
+      "height": 571,
+      "provenance": "上一轮图3，保留原图",
+      "alpha": false
+    },
+    {
+      "id": "battle",
+      "kind": "image",
+      "source": {
+        "type": "local",
+        "path": "expression-battle.png"
+      },
+      "bytes": 545010,
+      "sha256": "3f75455ce3f9ecd64c06de0e955ab39ffb38bf1340ca478985a6fd004b54e3b9",
+      "preload": "on-demand",
+      "lifetime": "card",
+      "fallbackAssetId": null,
+      "width": 898,
+      "height": 760,
+      "provenance": "上一轮图4，保留原图",
+      "alpha": false
+    }
+  ],
+  "embeddedDelivery": true,
+  "sourceBytes": 2011545,
+  "networkRequests": false,
+  "decodedOnDemand": true,
+  "bindingsOwner": "src/atlas.mjs renderGray"
+}

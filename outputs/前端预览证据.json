@@ -1,0 +1,65 @@
+{
+  "sourceFiles": [
+    {
+      "path": "src/vendor/worldorbit.js",
+      "sha256": "1da4b7749a22d74a458d37a6ce2ba09faef24c26eb656933a53e0e30b9f28060"
+    },
+    {
+      "path": "src/command.mjs",
+      "sha256": "b27080d3c73e9da29fee054e3b741dd1833913d0cfbb74104f732670862e72a0"
+    },
+    {
+      "path": "src/console-view.mjs",
+      "sha256": "b3efd3f0de383562a0800b4a77b4d044bfdf97408de0c73d0f79832cb3b3ff2b"
+    },
+    {
+      "path": "src/flightdeck.mjs",
+      "sha256": "77041d30e195f52e1bcd981a8f405b718b6a79f8103b31671c61a6a35acf8d02"
+    },
+    {
+      "path": "src/desk-panels.mjs",
+      "sha256": "c7956fa20d32a2f8bdde15fdbff6328f56209b77fb998255a736a49db5f6809b"
+    },
+    {
+      "path": "src/survey-globe.mjs",
+      "sha256": "c998cbd4b5b8ec8686d837d2dfa6103326cc2eb10b90277713899f35c72dd803"
+    },
+    {
+      "path": "src/hangar.generated.mjs",
+      "sha256": "747dae8f22ff04834ec75247887939c7a6c6b15bc539f13613073e25c512e450"
+    },
+    {
+      "path": "src/content.mjs",
+      "sha256": "2fc0a5e121e39120cc636bd02dbe6ed83e552eebb7a7e4c7ffef0ad79a2fe165"
+    },
+    {
+      "path": "src/gray-content.mjs",
+      "sha256": "ef5156ffa6cf98a08b723826b181867587c63dbf930bb9a1a6104036e4ca68e7"
+    },
+    {
+      "path": "src/gray-media.generated.mjs",
+      "sha256": "7f3b309c900a9144dbcf5151f4a43f63df9fa8921d4d3520af9ccef42b6f31c4"
+    },
+    {
+      "path": "src/l-gate.mjs",
+      "sha256": "a95e163c6172ef85aad2d9270ca6d8cfdd8976f21cfab64513d2cb0adb40e366"
+    },
+    {
+      "path": "src/ui-model.mjs",
+      "sha256": "0c5888f51bd0858669650f2efdbbb49e252cc6655872faa3fd232d50f39f84bd"
+    },
+    {
+      "path": "src/atlas-style.generated.mjs",
+      "sha256": "bc723f05209ac4fc457e7a1a896fab0f503ef770afbc37347ba1530ee30a93b6"
+    },
+    {
+      "path": "src/atlas.mjs",
+      "sha256": "5eeec86e5c96359d98a11fd9aefabee27f66022845fd17623e365cb39add0132"
+    }
+  ],
+  "syntheticScene": true,
+  "sameMaintainedComponent": true,
+  "realSillyTavern": false,
+  "hostDocumentFrameHierarchy": "preview direct mount; actual helper iframe → accessible parent document pending",
+  "externalRequests": false
+}

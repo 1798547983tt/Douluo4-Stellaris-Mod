@@ -1,0 +1,37 @@
+{
+  "wave": {
+    "width": 512,
+    "height": 768,
+    "alpha": true
+  },
+  "serious": {
+    "width": 512,
+    "height": 768,
+    "alpha": true
+  },
+  "salute": {
+    "width": 512,
+    "height": 768,
+    "alpha": true
+  },
+  "reach": {
+    "width": 512,
+    "height": 768,
+    "alpha": true
+  },
+  "portrait": {
+    "width": 1024,
+    "height": 1536,
+    "alpha": true
+  },
+  "wedding": {
+    "width": 1024,
+    "height": 1536,
+    "alpha": true
+  },
+  "ship": {
+    "width": 2172,
+    "height": 724,
+    "alpha": true
+  }
+}

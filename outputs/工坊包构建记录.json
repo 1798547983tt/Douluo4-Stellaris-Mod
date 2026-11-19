@@ -1,0 +1,146 @@
+{
+  "packageId": "dl4spacebackend01",
+  "parts": [
+    {
+      "id": 1,
+      "kind": "entry",
+      "op": "add",
+      "name": "斗四星际·世界硬规则",
+      "target": null,
+      "hash": "7d61423073c00c2bee69656411809317067af991fa68c5a4b8c2fdcdca3f3ea2",
+      "code": {
+        "flag": "none",
+        "urls": [],
+        "hiddenChars": false
+      }
+    },
+    {
+      "id": 2,
+      "kind": "entry",
+      "op": "add",
+      "name": "斗四星际·自主细化协议",
+      "target": null,
+      "hash": "54d8294b6574c4148ae2dc3e9667dfa8f8f14dfb8d80bf1c276a4834ba6f12fa",
+      "code": {
+        "flag": "none",
+        "urls": [],
+        "hiddenChars": false
+      }
+    },
+    {
+      "id": 3,
+      "kind": "regex",
+      "op": "add",
+      "name": "斗四星际·隐藏后端事务显示",
+      "target": null,
+      "hash": "c9f6d61c3182e6e5606c8a91278368ca65b8ede9d35f8907de2ba7ecf441e38f",
+      "code": {
+        "flag": "none",
+        "urls": [],
+        "hiddenChars": false
+      }
+    },
+    {
+      "id": 4,
+      "kind": "script",
+      "op": "replace",
+      "name": "斗罗ZOD",
+      "target": {
+        "key": "f711915c-3ee2-4cfa-a037-3e86f085ee2a",
+        "alt": "斗罗ZOD",
+        "name": "斗罗ZOD",
+        "hash": "7214b284df21642fe0e625eb10523e7491da4599ceb9140444f50c76841d9f2b"
+      },
+      "hash": "543a1ac0b82d06d16c5742db883315cd97962379bf8acc7eac36694e914c9bb4",
+      "code": {
+        "flag": "remote",
+        "urls": [
+          "https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource/dist/util/mvu_zod.js"
+        ],
+        "hiddenChars": false
+      }
+    },
+    {
+      "id": 5,
+      "kind": "script",
+      "op": "add",
+      "name": "斗四星际后端",
+      "target": null,
+      "hash": "48f4fa82a52a8633768213db7db401f3e56c492c2dc98afbbb35b2e33f14b133",
+      "code": {
+        "flag": "code",
+        "urls": [],
+        "hiddenChars": false
+      }
+    },
+    {
+      "id": 6,
+      "kind": "entry",
+      "op": "add",
+      "name": "灰风·斗四人物档案",
+      "target": null,
+      "hash": "b8d63de477ab544a79be6a64a1530b402f83d860c04af9780a1272c4d3ed09e4",
+      "code": {
+        "flag": "none",
+        "urls": [],
+        "hiddenChars": false
+      }
+    },
+    {
+      "id": 7,
+      "kind": "entry",
+      "op": "add",
+      "name": "合成人女王·相遇与同行",
+      "target": null,
+      "hash": "ba880cf9f8cbfe7854f6b27b0efcf5fc243699401875e7ad3a8750613ae1bf72",
+      "code": {
+        "flag": "none",
+        "urls": [],
+        "hiddenChars": false
+      }
+    },
+    {
+      "id": 8,
+      "kind": "entry",
+      "op": "add",
+      "name": "虫妈·相遇与同行",
+      "target": null,
+      "hash": "c0e2eff6575217a9ad3a8bab52e15b136b37eb9f2827a7ba428dc1304561a03d",
+      "code": {
+        "flag": "none",
+        "urls": [],
+        "hiddenChars": false
+      }
+    },
+    {
+      "id": 9,
+      "kind": "entry",
+      "op": "add",
+      "name": "肃正大小姐·相遇与同行",
+      "target": null,
+      "hash": "68e6e28c2f30722616d835f4853de680190e883e9d70b079fe766f179ed2f73a",
+      "code": {
+        "flag": "none",
+        "urls": [],
+        "hiddenChars": false
+      }
+    },
+    {
+      "id": 10,
+      "kind": "entry",
+      "op": "add",
+      "name": "泡泡·相遇与同行",
+      "target": null,
+      "hash": "0a6dc4e8eb4a0a298f6e2deec26f4ade131fd47f71827aa38427b147331157ab",
+      "code": {
+        "flag": "none",
+        "urls": [],
+        "hiddenChars": false
+      }
+    }
+  ],
+  "reusedWorkshopEntrySHA256": "4899fb6b605d7b4777d8384915b70bb0fab0fa79d4bd982751d19665c9517e6d",
+  "runtimeRequestsToWorkshopSite": false,
+  "published": false,
+  "liveInstalled": false
+}

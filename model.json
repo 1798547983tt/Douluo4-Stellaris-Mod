@@ -1,0 +1,1767 @@
+{
+  "schemaVersion": 1,
+  "modelId": "douluo4-space",
+  "modelVersion": "1.0.0",
+  "storage": {
+    "scope": "message",
+    "root": "stat_data.星际",
+    "strategy": "multi-floor"
+  },
+  "tables": {
+    "regions": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "kind": {
+          "type": "string",
+          "required": true
+        },
+        "controllerId": {
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "systems": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "regionId": {
+          "type": "string",
+          "required": true
+        },
+        "environment": {
+          "type": "string",
+          "required": true
+        },
+        "specialSpace": {
+          "type": "boolean",
+          "required": true
+        },
+        "controllerId": {
+          "type": "string",
+          "required": false
+        },
+        "claimedBy": {
+          "type": "array",
+          "required": true
+        },
+        "coordinates": {
+          "type": "object",
+          "required": false
+        }
+      }
+    },
+    "orbitals": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "systemId": {
+          "type": "string",
+          "required": true
+        },
+        "planetId": {
+          "type": "string",
+          "required": false
+        },
+        "kind": {
+          "type": "string",
+          "required": true
+        },
+        "orbitRadius": {
+          "type": "number",
+          "required": true
+        }
+      }
+    },
+    "planets": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "population": {
+          "type": "number",
+          "required": false
+        },
+        "industries": {
+          "type": "string",
+          "required": false
+        },
+        "economy": {
+          "type": "string",
+          "required": false
+        },
+        "specialties": {
+          "type": "string",
+          "required": false
+        },
+        "systemId": {
+          "type": "string",
+          "required": false
+        },
+        "regionId": {
+          "type": "string",
+          "required": true
+        },
+        "habitability": {
+          "type": "string",
+          "required": true
+        },
+        "environment": {
+          "type": "string",
+          "required": true
+        },
+        "nativeLife": {
+          "type": "boolean",
+          "required": true
+        },
+        "nativeMaxLevel": {
+          "type": "number",
+          "required": false
+        },
+        "controllerId": {
+          "type": "string",
+          "required": false
+        },
+        "colonized": {
+          "type": "boolean",
+          "required": true
+        },
+        "resources": {
+          "type": "array",
+          "required": true
+        },
+        "surveyComplete": {
+          "type": "boolean",
+          "required": true
+        },
+        "planetType": {
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "sites": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "planetId": {
+          "type": "string",
+          "required": true
+        },
+        "natural": {
+          "type": "boolean",
+          "required": true
+        },
+        "formation": {
+          "type": "string",
+          "required": true
+        },
+        "grade": {
+          "type": "string",
+          "required": true
+        },
+        "lifeBearing": {
+          "type": "boolean",
+          "required": true
+        },
+        "resourceType": {
+          "type": "string",
+          "required": true
+        },
+        "hazards": {
+          "type": "array",
+          "required": true
+        },
+        "resources": {
+          "type": "array",
+          "required": true
+        },
+        "controllerId": {
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "places": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "systemId": {
+          "type": "string",
+          "required": false
+        },
+        "planetId": {
+          "type": "string",
+          "required": false
+        },
+        "organizationId": {
+          "type": "string",
+          "required": false
+        },
+        "kind": {
+          "type": "string",
+          "required": true
+        },
+        "access": {
+          "type": "string",
+          "required": true
+        },
+        "services": {
+          "type": "array",
+          "required": true
+        },
+        "hazards": {
+          "type": "array",
+          "required": true
+        }
+      }
+    },
+    "services": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "organizationId": {
+          "type": "string",
+          "required": true
+        },
+        "placeId": {
+          "type": "string",
+          "required": true
+        },
+        "price": {
+          "type": "number",
+          "required": true
+        },
+        "delivery": {
+          "type": "string",
+          "required": true
+        },
+        "intelId": {
+          "type": "string",
+          "required": false
+        },
+        "intelFields": {
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "markets": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "placeId": {
+          "type": "string",
+          "required": true
+        },
+        "stock": {
+          "type": "object",
+          "required": true
+        },
+        "prices": {
+          "type": "object",
+          "required": true
+        }
+      }
+    },
+    "organizations": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "kind": {
+          "type": "string",
+          "required": true
+        },
+        "territoryIds": {
+          "type": "array",
+          "required": true
+        },
+        "headquartersId": {
+          "type": "string",
+          "required": false
+        },
+        "structure": {
+          "type": "string",
+          "required": true
+        },
+        "economy": {
+          "type": "string",
+          "required": true
+        },
+        "military": {
+          "type": "string",
+          "required": true
+        },
+        "policy": {
+          "type": "string",
+          "required": true
+        },
+        "services": {
+          "type": "array",
+          "required": true
+        },
+        "contact": {
+          "type": "string",
+          "required": true
+        },
+        "stance": {
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "lanes": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "fromId": {
+          "type": "string",
+          "required": true
+        },
+        "toId": {
+          "type": "string",
+          "required": true
+        },
+        "minutes": {
+          "type": "number",
+          "required": true
+        },
+        "fuelCost": {
+          "type": "number",
+          "required": true
+        },
+        "hazards": {
+          "type": "array",
+          "required": true
+        },
+        "access": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    "designs": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "role": {
+          "type": "string",
+          "required": true
+        },
+        "manufacturer": {
+          "type": "string",
+          "required": true
+        },
+        "dimensions": {
+          "type": "string",
+          "required": true
+        },
+        "crew": {
+          "type": "number",
+          "required": true
+        },
+        "capacity": {
+          "type": "number",
+          "required": true
+        },
+        "hull": {
+          "type": "number",
+          "required": true
+        },
+        "shield": {
+          "type": "number",
+          "required": true
+        },
+        "armor": {
+          "type": "number",
+          "required": true
+        },
+        "evasion": {
+          "type": "number",
+          "required": true
+        },
+        "sensor": {
+          "type": "number",
+          "required": true
+        },
+        "speed": {
+          "type": "number",
+          "required": true
+        },
+        "fuelCapacity": {
+          "type": "number",
+          "required": true
+        },
+        "supplyCapacity": {
+          "type": "number",
+          "required": true
+        },
+        "propulsion": {
+          "type": "string",
+          "required": true
+        },
+        "communication": {
+          "type": "string",
+          "required": true
+        },
+        "compartments": {
+          "type": "array",
+          "required": true
+        },
+        "weapons": {
+          "type": "array",
+          "required": true
+        },
+        "capabilities": {
+          "type": "array",
+          "required": true
+        },
+        "limitations": {
+          "type": "array",
+          "required": true
+        },
+        "cost": {
+          "type": "object",
+          "required": true
+        },
+        "buildMinutes": {
+          "type": "number",
+          "required": true
+        }
+      }
+    },
+    "ships": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "designId": {
+          "type": "string",
+          "required": true
+        },
+        "organizationId": {
+          "type": "string",
+          "required": false
+        },
+        "systemId": {
+          "type": "string",
+          "required": true
+        },
+        "captainId": {
+          "type": "string",
+          "required": false
+        },
+        "hull": {
+          "type": "number",
+          "required": true
+        },
+        "shield": {
+          "type": "number",
+          "required": true
+        },
+        "fuel": {
+          "type": "number",
+          "required": true
+        },
+        "supplies": {
+          "type": "number",
+          "required": true
+        },
+        "ammo": {
+          "type": "object",
+          "required": true
+        },
+        "cargo": {
+          "type": "object",
+          "required": true
+        },
+        "credits": {
+          "type": "number",
+          "required": true
+        },
+        "damage": {
+          "type": "array",
+          "required": true
+        },
+        "availableAt": {
+          "type": "number",
+          "required": true
+        },
+        "transit": {
+          "type": "object",
+          "required": false
+        }
+      }
+    },
+    "fleets": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "organizationId": {
+          "type": "string",
+          "required": false
+        },
+        "shipIds": {
+          "type": "array",
+          "required": true
+        },
+        "mission": {
+          "type": "string",
+          "required": true
+        },
+        "doctrine": {
+          "type": "string",
+          "required": true
+        },
+        "supplySourceId": {
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "species": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "kind": {
+          "type": "string",
+          "required": true
+        },
+        "templateId": {
+          "type": "string",
+          "required": false
+        },
+        "tier": {
+          "type": "string",
+          "required": false
+        },
+        "habitat": {
+          "type": "string",
+          "required": true
+        },
+        "energySource": {
+          "type": "string",
+          "required": true
+        },
+        "anatomy": {
+          "type": "string",
+          "required": true
+        },
+        "behavior": {
+          "type": "string",
+          "required": true
+        },
+        "reproduction": {
+          "type": "string",
+          "required": true
+        },
+        "intelligence": {
+          "type": "string",
+          "required": true
+        },
+        "abilities": {
+          "type": "array",
+          "required": true
+        },
+        "attacks": {
+          "type": "array",
+          "required": true
+        },
+        "weaknesses": {
+          "type": "array",
+          "required": true
+        },
+        "materials": {
+          "type": "array",
+          "required": true
+        },
+        "producesSoulRing": {
+          "type": "boolean",
+          "required": true
+        },
+        "nativePlanetId": {
+          "type": "string",
+          "required": false
+        },
+        "naturalMaxLevel": {
+          "type": "number",
+          "required": false
+        }
+      }
+    },
+    "creatures": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "templateId": {
+          "type": "string",
+          "required": false
+        },
+        "speciesId": {
+          "type": "string",
+          "required": true
+        },
+        "systemId": {
+          "type": "string",
+          "required": true
+        },
+        "level": {
+          "type": "number",
+          "required": true
+        },
+        "alive": {
+          "type": "boolean",
+          "required": true
+        },
+        "unique": {
+          "type": "boolean",
+          "required": true
+        },
+        "residenceSystemId": {
+          "type": "string",
+          "required": false
+        },
+        "migrationSystemIds": {
+          "type": "array",
+          "required": true
+        },
+        "condition": {
+          "type": "string",
+          "required": true
+        },
+        "hull": {
+          "type": "number",
+          "required": true
+        },
+        "maxHull": {
+          "type": "number",
+          "required": true
+        },
+        "shield": {
+          "type": "number",
+          "required": true
+        },
+        "armor": {
+          "type": "number",
+          "required": true
+        },
+        "evasion": {
+          "type": "number",
+          "required": true
+        },
+        "warningSigns": {
+          "type": "array",
+          "required": true
+        },
+        "planetId": {
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "equipment": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "category": {
+          "type": "string",
+          "required": true
+        },
+        "slot": {
+          "type": "string",
+          "required": true
+        },
+        "setName": {
+          "type": "string",
+          "required": true
+        },
+        "setSize": {
+          "type": "number",
+          "required": true
+        },
+        "stats": {
+          "type": "object",
+          "required": true
+        },
+        "setBonus": {
+          "type": "object",
+          "required": true
+        },
+        "requirements": {
+          "type": "string",
+          "required": true
+        },
+        "wordCount": {
+          "type": "number",
+          "required": false
+        }
+      }
+    },
+    "hulls": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "role": {
+          "type": "string",
+          "required": true
+        },
+        "size": {
+          "type": "number",
+          "required": true
+        },
+        "slots": {
+          "type": "number",
+          "required": true
+        },
+        "slotLayout": {
+          "type": "array",
+          "required": true
+        },
+        "power": {
+          "type": "number",
+          "required": true
+        },
+        "mass": {
+          "type": "number",
+          "required": true
+        },
+        "hull": {
+          "type": "number",
+          "required": true
+        },
+        "shield": {
+          "type": "number",
+          "required": true
+        },
+        "capacity": {
+          "type": "number",
+          "required": true
+        },
+        "crew": {
+          "type": "number",
+          "required": true
+        },
+        "speed": {
+          "type": "number",
+          "required": true
+        },
+        "cost": {
+          "type": "number",
+          "required": true
+        },
+        "shape": {
+          "type": "string",
+          "required": true
+        },
+        "silhouette": {
+          "type": "object",
+          "required": false
+        },
+        "unlocked": {
+          "type": "boolean",
+          "required": true
+        },
+        "researchProof": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    "modules": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "kind": {
+          "type": "string",
+          "required": true
+        },
+        "fitTypes": {
+          "type": "array",
+          "required": true
+        },
+        "slot": {
+          "type": "number",
+          "required": true
+        },
+        "power": {
+          "type": "number",
+          "required": true
+        },
+        "mass": {
+          "type": "number",
+          "required": true
+        },
+        "minSize": {
+          "type": "number",
+          "required": true
+        },
+        "cost": {
+          "type": "number",
+          "required": true
+        },
+        "weapon": {
+          "type": "object",
+          "required": false
+        },
+        "speed": {
+          "type": "number",
+          "required": false
+        },
+        "shield": {
+          "type": "number",
+          "required": false
+        },
+        "armor": {
+          "type": "number",
+          "required": false
+        },
+        "sensor": {
+          "type": "number",
+          "required": false
+        },
+        "capacity": {
+          "type": "number",
+          "required": false
+        },
+        "unlocked": {
+          "type": "boolean",
+          "required": true
+        },
+        "researchProof": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    "mechas": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "grade": {
+          "type": "string",
+          "required": true
+        },
+        "stats": {
+          "type": "object",
+          "required": true
+        },
+        "dualArmorCompatible": {
+          "type": "boolean",
+          "required": true
+        },
+        "dualArmorBonus": {
+          "type": "object",
+          "required": true
+        },
+        "compatibility": {
+          "type": "string",
+          "required": true
+        },
+        "features": {
+          "type": "array",
+          "required": true
+        },
+        "energy": {
+          "type": "number",
+          "required": true
+        },
+        "maxEnergy": {
+          "type": "number",
+          "required": true
+        },
+        "requirements": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    "companions": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "bonded": {
+          "type": "boolean",
+          "required": true
+        },
+        "form": {
+          "type": "string",
+          "required": true
+        },
+        "expression": {
+          "type": "string",
+          "required": false
+        },
+        "affection": {
+          "type": "number",
+          "required": false
+        },
+        "weddingUnlocked": {
+          "type": "string",
+          "required": false
+        },
+        "affectionReason": {
+          "type": "string",
+          "required": false
+        },
+        "beloved": {
+          "type": "string",
+          "required": true
+        },
+        "exclusive": {
+          "type": "boolean",
+          "required": true
+        },
+        "originStory": {
+          "type": "string",
+          "required": true
+        },
+        "shipId": {
+          "type": "string",
+          "required": false
+        },
+        "nanites": {
+          "type": "number",
+          "required": true
+        },
+        "inCombat": {
+          "type": "boolean",
+          "required": true
+        },
+        "reconstructAt": {
+          "type": "number",
+          "required": false
+        },
+        "currentWish": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    "characters": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "organizationId": {
+          "type": "string",
+          "required": false
+        },
+        "placeId": {
+          "type": "string",
+          "required": false
+        },
+        "speciesId": {
+          "type": "string",
+          "required": false
+        },
+        "level": {
+          "type": "number",
+          "required": true
+        },
+        "role": {
+          "type": "string",
+          "required": true
+        },
+        "motivation": {
+          "type": "string",
+          "required": true
+        },
+        "relationships": {
+          "type": "array",
+          "required": true
+        },
+        "hasDivineSeat": {
+          "type": "boolean",
+          "required": true
+        },
+        "nativePlanetId": {
+          "type": "string",
+          "required": false
+        },
+        "nativeGrowth": {
+          "type": "boolean",
+          "required": true
+        },
+        "alive": {
+          "type": "boolean",
+          "required": true
+        }
+      }
+    },
+    "contracts": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "organizationId": {
+          "type": "string",
+          "required": true
+        },
+        "kind": {
+          "type": "string",
+          "required": true
+        },
+        "objective": {
+          "type": "string",
+          "required": true
+        },
+        "reward": {
+          "type": "object",
+          "required": true
+        },
+        "requirements": {
+          "type": "array",
+          "required": true
+        },
+        "claimed": {
+          "type": "boolean",
+          "required": true
+        },
+        "deadline": {
+          "type": "number",
+          "required": false
+        },
+        "outcome": {
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "events": {
+      "primaryKey": "id",
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "origin": {
+          "type": "string",
+          "required": true
+        },
+        "summary": {
+          "type": "string",
+          "required": true
+        },
+        "details": {
+          "type": "object",
+          "required": true
+        },
+        "secrets": {
+          "type": "object",
+          "required": true
+        },
+        "aliases": {
+          "type": "array",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "kind": {
+          "type": "string",
+          "required": true
+        },
+        "subjectIds": {
+          "type": "array",
+          "required": true
+        },
+        "preconditions": {
+          "type": "array",
+          "required": true
+        },
+        "scheduledAt": {
+          "type": "number",
+          "required": true
+        },
+        "outcome": {
+          "type": "string",
+          "required": true
+        }
+      }
+    }
+  }
+}

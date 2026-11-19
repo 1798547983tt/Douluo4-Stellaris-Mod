@@ -1,0 +1,5 @@
+# Retain byte identity with the verified development snapshot on every platform.
+* -text
+*.png binary
+*.webp binary
+*.jpg binary

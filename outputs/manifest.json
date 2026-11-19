@@ -1,0 +1,77 @@
+{
+  "version": "1.0.0",
+  "delivery": "rolecard-workshop-components-with-embedded-ui",
+  "storage": "stat_data.星际",
+  "primaryUpdateMode": "same-generation",
+  "externalRequests": false,
+  "hostBaseline": {
+    "sillyTavern": "1.19.0",
+    "tavernHelper": "4.11.3",
+    "promptTemplate": "1.17.9"
+  },
+  "provenance": {
+    "cardCompatibility": "built",
+    "requiredCardSHA256": "96a9ddd5ebb1d00dd0fb577973298ace065b23e1d7384813c0be13ec528f10dd",
+    "inputSHA256": "96a9ddd5ebb1d00dd0fb577973298ace065b23e1d7384813c0be13ec528f10dd",
+    "originalBytes": 50789069,
+    "componentId": "f711915c-3ee2-4cfa-a037-3e86f085ee2a",
+    "sourcePointer": "/data/extensions/tavern_helper/scripts (script id selector)",
+    "sourceSHA256": "d16373c2a5bd391be75878d3e38ae42359423ace3413796d7da74cdcd46eff6f",
+    "outputSHA256": "ba6b8f37abf96e29e032eebbe5f5a7c785efb0b606ef77d68b66aec4ba26f3cb",
+    "semanticRoundtripOutsideAddedField": true,
+    "inputUnchanged": true
+  },
+  "artifacts": [
+    {
+      "path": "dl4-space-backend.js",
+      "sha256": "84b0da174c0e82552ed1ed309f8706a9afe4bab102852fceb07a0789143964ae"
+    },
+    {
+      "path": "dl4-space-backend.helper.json",
+      "sha256": "691f0f259397e54dc715bde3d85782d4a81bd2ec85a1cf5f38e3f0cade6d51f3"
+    },
+    {
+      "path": "dl4-space-rules.worldbook.json",
+      "sha256": "4f8c31852642886d68ad230f11656c4f79f5e524c7efd31e89ad739c07552401"
+    },
+    {
+      "path": "dl4-space-hide.regex.json",
+      "sha256": "93958cc9c69bab5b4caabb86f685e35d3f43b20a9020679d46f88fa9f7313b0c"
+    },
+    {
+      "path": "douluo-zod-space-compat.helper.json",
+      "sha256": "b07a25c19de980a2093f6c844880a21f837a0d7a196b4d1137fb38cd02122460"
+    },
+    {
+      "path": "斗四星际MOD-v8-一键安装.script.json",
+      "sha256": "40d7b7ffb6e6cd33fa98fbe8e321a5166f4387ee4df07fda3e58b889555bffee"
+    },
+    {
+      "path": "斗四星际MOD-一键安装.script.json",
+      "sha256": "40d7b7ffb6e6cd33fa98fbe8e321a5166f4387ee4df07fda3e58b889555bffee"
+    },
+    {
+      "path": "斗四星际MOD-工坊作品包.json",
+      "sha256": "875ac337eb7b7bad1631bbc49cc6a7e0810b59a4be0b0b4b0f4eea1acb2b739e"
+    },
+    {
+      "path": "斗四星际MOD-工坊上传.json",
+      "sha256": "575e90bee47cc2007c721d876413b137fff50134febf4b3aaa7d8ec79da05883"
+    },
+    {
+      "path": "星海导航-预览.html",
+      "sha256": "c1c112957f1daf13bac50a3a4e82836862a472d9d8161b043aa325a950eb7b58"
+    },
+    {
+      "path": "前端预览证据.json",
+      "sha256": "5ffe2e8d5f6659f3a545cdcf19df580540dde48e17c83f012ca9b17ddd275c2b"
+    },
+    {
+      "path": "星海导航-v8-预览.html",
+      "sha256": "c1c112957f1daf13bac50a3a4e82836862a472d9d8161b043aa325a950eb7b58"
+    }
+  ],
+  "runtimeAcceptance": "pending",
+  "frontendVersion": "8.0.0",
+  "workshopVersion": 8
+}

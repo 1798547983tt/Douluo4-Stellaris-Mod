@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "modelId": "douluo4-space",
+  "bindings": [
+    {
+      "id": "regions-backend",
+      "surface": "script",
+      "table": "regions",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "systems-backend",
+      "surface": "script",
+      "table": "systems",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "orbitals-backend",
+      "surface": "script",
+      "table": "orbitals",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "planets-backend",
+      "surface": "script",
+      "table": "planets",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "sites-backend",
+      "surface": "script",
+      "table": "sites",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "places-backend",
+      "surface": "script",
+      "table": "places",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "services-backend",
+      "surface": "script",
+      "table": "services",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "markets-backend",
+      "surface": "script",
+      "table": "markets",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "organizations-backend",
+      "surface": "script",
+      "table": "organizations",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "lanes-backend",
+      "surface": "script",
+      "table": "lanes",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "designs-backend",
+      "surface": "script",
+      "table": "designs",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "ships-backend",
+      "surface": "script",
+      "table": "ships",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "fleets-backend",
+      "surface": "script",
+      "table": "fleets",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "species-backend",
+      "surface": "script",
+      "table": "species",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "creatures-backend",
+      "surface": "script",
+      "table": "creatures",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "equipment-backend",
+      "surface": "script",
+      "table": "equipment",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "hulls-backend",
+      "surface": "script",
+      "table": "hulls",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "modules-backend",
+      "surface": "script",
+      "table": "modules",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "mechas-backend",
+      "surface": "script",
+      "table": "mechas",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "companions-backend",
+      "surface": "script",
+      "table": "companions",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "characters-backend",
+      "surface": "script",
+      "table": "characters",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "contracts-backend",
+      "surface": "script",
+      "table": "contracts",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    },
+    {
+      "id": "events-backend",
+      "surface": "script",
+      "table": "events",
+      "field": "id",
+      "access": "read-write",
+      "owner": "dl4-transaction-engine",
+      "refreshEvents": [
+        "MESSAGE_UPDATED",
+        "MESSAGE_SWIPED",
+        "CHAT_CHANGED"
+      ]
+    }
+  ]
+}

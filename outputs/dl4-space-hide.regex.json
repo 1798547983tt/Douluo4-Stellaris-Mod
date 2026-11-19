@@ -1,0 +1,17 @@
+{
+  "id": "68b03b08-497b-4f43-8be8-f4f1233ab301",
+  "scriptName": "斗四星际·隐藏后端事务显示",
+  "findRegex": "/<DL4Space>[\\s\\S]*?<\\/DL4Space>/g",
+  "replaceString": "<!-- DL4Space display hidden -->",
+  "trimStrings": [],
+  "placement": [
+    2
+  ],
+  "disabled": false,
+  "markdownOnly": true,
+  "promptOnly": false,
+  "runOnEdit": true,
+  "substituteRegex": 0,
+  "minDepth": null,
+  "maxDepth": null
+}

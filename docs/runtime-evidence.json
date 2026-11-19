@@ -1,0 +1,102 @@
+{
+  "capturedAt": "2026-11-18",
+  "mode": "read-only-installed-source",
+  "versions": {
+    "sillyTavern": "1.19.0",
+    "tavernHelper": "4.11.3",
+    "promptTemplate": "1.17.9"
+  },
+  "authorities": [
+    {
+      "relativePath": "@types/function/chat_message.d.ts",
+      "sha256": "302930d6cc697321d0e1514d096dcd272a465fbc418f2190b41ddcffafc19327"
+    },
+    {
+      "relativePath": "@types/function/variables.d.ts",
+      "sha256": "45bc282ef55a070edcd6d659313f609fe38dae0650897c2fcf9243b00041ce1b"
+    },
+    {
+      "relativePath": "@types/function/inject.d.ts",
+      "sha256": "315bbd3329cea8fe269e1d396948bd98f5c916787d9bd8c4f8cd0359015d71b0"
+    },
+    {
+      "relativePath": "@types/iframe/event.d.ts",
+      "sha256": "33deb24c14916ff0958898b7890ab69bd584d33261297dc0a57448011760cd8e"
+    },
+    {
+      "relativePath": "@types/iframe/exported.mvu.d.ts",
+      "sha256": "3590b3a1d74b1e021a1bc54953b66284c4c860918ec98c8418a54cac8069ef16"
+    },
+    {
+      "relativePath": "src/function/variables.ts",
+      "sha256": "4bb8008e68a6ff7c9e21a6e5e4fc7d08157593c82f562c855e4e3d416fd3c2a4"
+    }
+  ],
+  "contracts": [
+    {
+      "symbol": "getChatMessages",
+      "surface": "Tavern Helper",
+      "use": "0-{{lastMessageId}}; include_swipes:true; role筛选后处理",
+      "confidence": "installed-source",
+      "runtimeCheck": "模拟通过，真实宿主待验"
+    },
+    {
+      "symbol": "getVariables/updateVariablesWith",
+      "surface": "Tavern Helper",
+      "use": "type:message,message_id；源码证明写入当前选中swipe变量",
+      "confidence": "installed-source",
+      "runtimeCheck": "模拟通过，真实宿主待验"
+    },
+    {
+      "symbol": "injectPrompts/uninjectPrompts",
+      "surface": "Tavern Helper",
+      "use": "in_chat/depth:0/role:system/should_scan:false；切聊天清理",
+      "confidence": "installed-source",
+      "runtimeCheck": "模拟通过，真实宿主待验"
+    },
+    {
+      "symbol": "eventOn/tavern_events",
+      "surface": "Tavern Helper",
+      "use": "返回stop；GENERATON_AFTER_COMMANDS前更新上下文，结束后提交",
+      "confidence": "installed-source",
+      "runtimeCheck": "真实时序待验"
+    },
+    {
+      "symbol": "Mvu.events.VARIABLE_UPDATE_ENDED",
+      "surface": "card-embedded-remote-MVU",
+      "use": "仅附加刷新监听；无字符串事件回退",
+      "confidence": "declaration-and-original-card",
+      "runtimeCheck": "远程加载版本及实时事件待验"
+    }
+  ],
+  "externalInstallationModified": false,
+  "frontend": {
+    "workshopVersion": 3,
+    "hostProven": false,
+    "source": "src/atlas.mjs",
+    "deps": "embedded native DOM/SVG/CSS; no frontend CDN",
+    "actionAPIs": [
+      {
+        "symbol": "createChatMessages",
+        "authority": "installed JS-Slash-Runner/@types/function/chat_message.d.ts:188",
+        "parameters": "[{role:\"user\",message:text}]",
+        "confidence": "installed-declaration",
+        "runtimeCheck": "mock only"
+      },
+      {
+        "symbol": "triggerSlash",
+        "authority": "installed JS-Slash-Runner/@types/function/slash.d.ts and ST public/scripts/slash-commands.js trigger command",
+        "parameters": "\"/trigger\"",
+        "confidence": "installed-source-and-declaration",
+        "runtimeCheck": "mock only"
+      }
+    ],
+    "MVUInbox": {
+      "path": "stat_data.星际待办",
+      "shape": "{baseRevision,transaction:{version:1,ops}}",
+      "writer": "existing MVU through card protocol",
+      "reader": "message-floor getVariables using installed TH wrapper",
+      "runtimeCheck": "mock replay and dedup pass; real host pending"
+    }
+  }
+}
